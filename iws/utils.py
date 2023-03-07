@@ -1,16 +1,18 @@
-import numpy as np
-import pandas as pd
-import pickle
 import re
 import os
 import sys
 import torch
-from torchmodels import TorchMLP
-from snorkel.labeling.model import LabelModel
+import pickle
+import numpy as np
+import pandas as pd
+
 from scipy import sparse
+from snorkel.labeling.model import LabelModel
 from sklearn.metrics import roc_auc_score
 from sklearn.metrics import log_loss
 from sklearn.feature_extraction.text import CountVectorizer
+
+from .torchmodels import TorchMLP
 
 AVAILABLEDATASETS = {'IMDB', 'Amazon', 'journalist_photographer', 'professor_physician', 'painter_architect',
                      'professor_teacher'}
