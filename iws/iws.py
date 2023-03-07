@@ -2,13 +2,14 @@ import os
 import pickle
 import time
 import numpy as np
-from datetime import datetime
-from torchmodels import BaggingWrapperTorch
-from utils import evaluate_complex_binary, print_progress
 import ipywidgets as widgets
+
 from IPython.display import display
 from bs4 import BeautifulSoup
+from datetime import datetime
 
+from .torchmodels import BaggingWrapperTorch
+from .utils import evaluate_complex_binary, print_progress
 
 class InteractiveWeakSupervision:
     def __init__(self, LFs, LFfeatures, LFdescriptions, initial_labels, acquisition='LSE', r=0.6,
