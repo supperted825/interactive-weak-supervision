@@ -18,7 +18,7 @@ setup(
         'ipywidgets',
         'torch',
         'notebook',
-        'beautifulsoup4'
+        'beautifulsoup4',
         'matplotlib'
     ],
 )
